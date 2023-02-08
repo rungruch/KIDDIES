@@ -286,19 +286,21 @@ nav .menu-btn i{
   padding: 1rem 3.2rem;
   text-decoration: none;
   border-radius: 20px;
-  transition: background-color 500ms;
+  transition: all background-color 500ms;
 }
 
 .btn--fill:link,
 .btn--fill:visited {
   background-color: #76680E;
   color: #fff;
+  text-decoration: none;
 }
 
 .btn--fill:hover,
 .btn--fill:active {
   background-color: #9c903f;
   text-decoration: underline;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1080px) {
   .heading-primary {font-size: 1.9rem;}
@@ -315,6 +317,17 @@ nav .menu-btn i{
   .buy-btn {
       font-size: 1rem;
       padding: 0.5rem 2.2rem;
+    }
+
+    .hero{
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    .hero-img{
+      width: 60%;
+    }
+    .heading-primary {
+      margin-bottom: 1.5rem ;
     }
 }
 
@@ -366,6 +379,7 @@ footer {
 @media only screen and (max-width: 800px) {
   .footer-section {
     width: 50%;
+    margin-bottom: 1rem;
   }
 
   .footer-section h4 {
