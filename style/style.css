@@ -116,12 +116,13 @@ nav .menu-btn i{
 .search input{
   min-width: 300px;
   min-height: 30px;
-  background-color: #FDFBF1;
+  background-color: transparent;
   border-color: #000000;
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
   Transition: all 0.3s ease;
+  outline: none;
 }
 .ico-nav-mobile img{
   cursor: pointer;
@@ -166,8 +167,9 @@ nav .menu-btn i{
     border-color: #000000;
     border-style: solid;
     border-width: 2px;
-    border-radius: 2px;
+    border-radius: 5px;
     Transition: all 0.3s ease;
+    outline: none;
    }
   nav .ico-nav-mobile .menu-btn{
     margin-left: 8px;
@@ -302,6 +304,26 @@ nav .menu-btn i{
   text-decoration: underline;
   text-decoration: none;
 }
+.hero-contact{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0.1rem;
+  margin-right: 2rem;
+  gap: 0.5rem;
+}
+
+.hero-contact p{
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+.hero-contact a img{
+  height: 25px;
+  display: block;
+}
 @media only screen and (max-width: 1080px) {
   .heading-primary {font-size: 1.9rem;}
   .hero-description {font-size: 1.4rem;}
@@ -329,8 +351,11 @@ nav .menu-btn i{
     .heading-primary {
       margin-bottom: 1.5rem ;
     }
+    .hero-contact a img{
+      height: 20px;
+      display: block;
+    }
 }
-
 
 /* Content */
 
@@ -375,6 +400,16 @@ footer {
   font-size: 0.8rem;
 }
 
+.footer-section ul li a img {
+  width: 20px;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
+}
 /* 2 row */
 @media only screen and (max-width: 800px) {
   .footer-section {
@@ -386,7 +421,7 @@ footer {
     font-size: 0.8rem;
   }
   .footer-section ul li a {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
 }
