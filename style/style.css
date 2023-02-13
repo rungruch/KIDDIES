@@ -240,7 +240,8 @@ nav .menu-btn i{
 .topic a{
   font-size: 2vw;
 }
-main {
+
+.product-details {
   display: flex;
   background-color: #FDFBF1;
   /* border: solid; */
@@ -381,7 +382,7 @@ main {
   }
 }
 @media (max-width: 950px) {
-  main{
+  .product-details{
     flex-wrap: wrap;
   }
   .box1{
@@ -401,7 +402,7 @@ main {
   }
 }
 @media (max-width: 610px) {
-  main{
+  .product-details{
     display: inline-block;
   }
   .box1{
