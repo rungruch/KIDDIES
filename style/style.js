@@ -1,3 +1,12 @@
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.getElementById('newarrval-browse-scrolling-wrapper').scrollLeft += 250;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('newarrval-browse-scrolling-wrapper').scrollLeft -= 250;
+};
 
 function serchenable() {
     let search = document.getElementsByClassName("search");

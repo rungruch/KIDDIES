@@ -658,7 +658,97 @@ nav .menu-btn i{
       display: block;
     }
 }
+/*new arrival brose*/
+.new-arrival-browse{
+  display: flex;
+ flex-direction: column;
+}
+.browse-scrolling-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.browse-scrolling-wrappe::-webkit-scrollbar {
+    display: none;
+}
+.browse-scrolling-wrapper .card{
+  flex: 0 0 auto;
+  background: transparent;
+  margin: 0 1em 1.5em;
+  height: 25em;
+  width:15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
 
+  border-radius: 25px;
+}
+.browse-scrolling-wrapper .card:hover{
+  background-color: #D9D9D950;
+}
+.browse-scrolling-wrapper .card-view-all h6{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 380;
+}
+.browse-scrolling-wrapper .card-view-all{
+  cursor: pointer !important;
+}
+.browse-scrolling-wrapper .card-view-all:hover{
+  background-color: transparent;
+}
+.browse-scrolling-wrapper .card .mainimage img {
+  width: 100%;
+  height: 105%;
+  background: transparent;
+}
+.browse-scrolling-wrapper .card h4 {
+  font-weight: 500;
+  font-size: 0.8em;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 0.5em;
+  margin-top: 2em;
+  text-align: left;
+}
+.browse-scrolling-wrapper .card .infoproduct {
+  font-size: 0.7em;
+  font-weight: 250;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.browse-scrolling-wrapper .card .price {
+  font-size: 0.75em;
+  font-weight: 500;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 0.5em;
+  text-align: left;
+}
+.top-new-arrival-browse{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-arrval-scroll-btn button{
+  background-color: #76680E;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all background-color 500ms;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 10px 30px;
+}
+.new-arrval-scroll-btn button:hover{
+  background-color: #9c903f;
+}
 /*card-category*/
 .content-index{
   width: 100%;
@@ -670,7 +760,6 @@ font-size: 1.2rem;
  font-weight: 600;
  color: #404040;
  margin-bottom: 1.5rem;
- margin-left: 5rem;
 }
 .category-card {
   display: grid;
@@ -1027,8 +1116,25 @@ text-shadow: 1px 1px 2px #9c9c9a;
   .content .card-container{
     grid-template-columns: auto auto;
   }
-  .topfilter .row{
-    display: none;
+  .topfilter{
+    padding: 0;
+    margin-top: 2em;
+  }
+  .topfilter h3{
+    text-align: center;
+  }
+}
+@media(max-width:400px)
+{
+  .content .card-container{
+    padding : 0;
+  }
+}
+@media(max-width:350px)
+{
+  .content .card-container .card {
+    height: 9em;
+    width: 4em;
   }
 }
 
