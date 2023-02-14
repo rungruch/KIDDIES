@@ -662,6 +662,7 @@ nav .menu-btn i{
 .new-arrival-browse{
   display: flex;
  flex-direction: column;
+ margin-bottom: 30px;
 }
 .browse-scrolling-wrapper{
   display: flex;
@@ -733,22 +734,49 @@ nav .menu-btn i{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .new-arrval-scroll-btn button{
-  background-color: #76680E;
+  background-color: #D9D9D990;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all background-color 500ms;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #474747;
   padding: 10px 30px;
 }
 .new-arrval-scroll-btn button:hover{
-  background-color: #9c903f;
+  background-color: #bcbbbb90;
 }
+
+@media (max-width: 800px){
+  .new-arrval-scroll-btn button{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 650px){
+  .new-arrval-scroll-btn button{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 500px){
+  .browse-scrolling-wrapper .card {
+    height: 20em;
+    width: 11em;
+  }
+  .new-arrval-scroll-btn{
+    display: none;
+  }
+  .top-new-arrival-browse{
+    display: block;
+  }
+
+}
+
 /*card-category*/
 .content-index{
   width: 100%;
@@ -759,7 +787,9 @@ nav .menu-btn i{
 font-size: 1.2rem;
  font-weight: 600;
  color: #404040;
- margin-bottom: 1.5rem;
+}
+.category-browse h3 {
+  margin-bottom: 30px;
 }
 .category-card {
   display: grid;
@@ -817,10 +847,6 @@ text-shadow: 1px 1px 2px #9c9c9a;
   .category-card-element-title{
     font-size: 1.2rem;
   }
-  .content-index h3{
-    text-align: center;
-    margin-left: 0;
-  }
   .category-card-element{
     width: 12em;
     height: 17em;
@@ -829,6 +855,9 @@ text-shadow: 1px 1px 2px #9c9c9a;
 @media (max-width: 500px){
   .category-card-element-title{
     font-size: 0.9rem;
+  }
+  .content-index h3{
+    text-align: center;
   }
 
   .category-card-element{
