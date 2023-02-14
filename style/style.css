@@ -692,8 +692,16 @@ nav .menu-btn i{
 }
 .browse-scrolling-wrapper .card-view-all h6{
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 380;
+  font-size: 0.9rem;
+  font-weight: 580;
+  background-color: rgba(217, 217, 217, 0.565);
+  color: #474747;
+  border-radius: 25px;
+  padding: 12px 0;
+  width: 7rem;
+}
+.browse-scrolling-wrapper .card-view-all h6:hover{
+  background-color: #bcbbbb90;
 }
 .browse-scrolling-wrapper .card-view-all{
   cursor: pointer !important;
