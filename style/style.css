@@ -221,11 +221,8 @@ nav .ico-nav .menu-btn i{
   #click:checked ~ footer{
     display: none;
   }
-  #click:checked ~ html, body {
-    overflow-x: hidden;
-  }
   #click:checked ~ body {
-    position: relative;
+    background-color: #FCEF98;
   }
 
   nav ul li a.active,
