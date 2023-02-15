@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: 'Inter';
 } 
+body {
+  background-color: #FCEF98;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -220,9 +223,6 @@ nav .ico-nav .menu-btn i{
   }
   #click:checked ~ footer{
     display: none;
-  }
-  #click:checked ~ body {
-    background-color: #FCEF98;
   }
 
   nav ul li a.active,
