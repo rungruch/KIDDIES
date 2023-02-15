@@ -62,16 +62,20 @@ nav ul li a:hover{
   color: #111;
   font-size: 1.2rem;
 }
-nav .menu-btn{
-  display: none;
-}
 nav .menu-btn i{
   color: black;
   font-size: 22px;
   cursor: pointer;
-  display: none;
+  text-align: center;
 }
-
+nav .ico-nav .menu-btn i{
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+.menu-desktop{
+  display: block;
+}
 .ico-nav{
  display: flex;
  justify-content: space-between;
@@ -88,9 +92,6 @@ nav .menu-btn i{
 .ico-nav img:hover{
   width: 25px;
   height: 25px;
-}
-.ico-nav-mobile{
-  display: none;
 }
 .search label img{
   display: flex;
@@ -109,11 +110,10 @@ nav .menu-btn i{
   margin-left: 5px;
   margin-right: 5px;
 }
-.ico-profile {
+.ico-menu-mobile {
   display: none;
  }
 .search{
-  display: none;
   justify-content: space-between;
   align-items: center;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -129,20 +129,19 @@ nav .menu-btn i{
   Transition: all 0.3s ease;
   outline: none;
 }
-.ico-nav-mobile img{
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  Transition: all 0.3s ease;
-}
-.ico-nav-mobile img:hover{
-  width: 25px;
-  height: 25px;
-}
+
 #click {
   display: none;
+}
+#search {
+  display: none;
+}
+
+#search:checked ~ nav #menu .search-fn{
+ display: none;
+ }
+#search:checked ~ nav #menu .search{
+  display: flex;
 }
 
 @media (max-width: 1000px){
@@ -151,20 +150,10 @@ nav .menu-btn i{
   }
 }
 @media (max-width: 800px) {
-  .search{
-    display: none;
-  }
-  .ico-nav{
-    display: none;
-   }
-  .ico-nav-mobile{
-    display: flex;
-    justify-content: space-between;
-   }
-   .ico-profile {
+   .ico-menu-mobile {
     display: block;
    }
-   .ico-profile input{
+   .ico-menu-mobile input{
     min-height: 50px;
     align-items: center;
     width: auto;
@@ -176,6 +165,12 @@ nav .menu-btn i{
     Transition: all 0.3s ease;
     outline: none;
    }
+   .menu-btn{
+    margin-left: 3px;
+   }
+   .menu-desktop{
+    display: none;
+  }
   nav .ico-nav-mobile .menu-btn{
     margin-left: 8px;
     display: block;
@@ -185,10 +180,7 @@ nav .menu-btn i{
   #click:checked ~ nav{
    background-color: #FCEF98;
   }
-  nav .ico-nav-mobile .menu-btn i{
-    display: block;
-    transition: all 0.3s ease;
-  }
+  
   #click:checked ~ nav .menu-btn i:before{
     content: "\f00d";
   }
@@ -228,6 +220,12 @@ nav .menu-btn i{
     background: none;
     font-size: 1.2rem;
   }
+  .search{
+    display: block !important;
+  }
+  .search-fn{
+    display: block !important;
+    }
 }
 
 /* Nav */

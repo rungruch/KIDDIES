@@ -10,32 +10,31 @@
   <body>
     <div class="container">
       <input type="checkbox" id="click">
+      <input type="checkbox" id="search">
     <nav class="nav-hero">
       <div class="logo"><a href="index.html">Kiddies</a></div>
-      <div class="search">
-        <input type="text" placeholder="Search">
-        <label for="search-cancel-click">
-          <img src="resource/img/reject.png" alt="" id="ico-search-cancel" onclick="serchdisable()" >
-        </label>
-      </div>
-      <div class="ico-nav-mobile">
-        <img src="resource/img/bag.png" alt="">
-        <label for="click" class="menu-btn">
-          <i class="fa fa-bars"></i>
-        </label>
-      </div>
       <ul id="menu">
-        <li><a href="new.html">New Arrivals</a></li>
-        <li><a href="#">Wear</a></li>
-        <li><a href="#">Bath</a></li>
-        <li><a href="#">Living</a></li>
-        <li class="ico-profile"><a href="#" >Profile</a></li>
-        <li class="ico-profile"><input type="text" placeholder="Search"></li>
+        <li class="search-fn"><a href="new.html">New Arrivals</a></li>
+        <li class="search-fn"><a href="#">Wear</a></li>
+        <li class="search-fn"><a href="#">Bath</a></li>
+        <li class="search-fn"><a href="#">Living</a></li>
+        <li class="ico-menu-mobile"><a href="#" >Profile</a></li>
+        <div class="search ico-menu-mobile">
+          <input type="text" placeholder="Search">
+          <label for="search" class="menu-desktop">
+            <img src="resource/img/reject.png" alt="" id="ico-search-cancel">
+          </label>
+        </div>
       </ul>
       <div class="ico-nav">
-        <img src="resource/img/search.png" alt="" onclick="serchenable()" id="ico-search">
+        <label for="search">
+          <img src="resource/img/search.png" alt="" id="ico-search" class="menu-desktop">
+        </label>
         <img src="resource/img/bag.png" alt="">
-        <img src="resource/img/user.png" alt="">
+        <img src="resource/img/user.png" alt="" class="menu-desktop">
+        <label for="click" class="menu-btn ico-menu-mobile">
+          <i class="fa fa-bars"></i>
+        </label>
       </div>
     </nav>
 
