@@ -60,10 +60,12 @@ nav ul li a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-nav ul li a.active,
-nav ul li a:hover{
-  color: #111;
-  font-size: 1.2rem;
+@media (hover: hover) and (pointer: fine) {
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    font-size: 1.2rem;
+  }
 }
 nav .menu-btn i{
   color: black;
@@ -92,9 +94,23 @@ nav .ico-nav .menu-btn i{
   margin-right: 5px;
   transition: 0.3s ease;
 }
-.ico-nav img:hover{
-  width: 25px;
-  height: 25px;
+@media (hover: hover) and (pointer: fine) {
+  .ico-nav img:hover{
+    width: 25px;
+    height: 25px;
+  }
+  .search label img:hover{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ico-nav img:hover{
+    width: 25px;
+    height: 25px;
+  }
 }
 .search label img{
   display: flex;
@@ -105,13 +121,6 @@ nav .ico-nav .menu-btn i{
   margin-right: 5px;
   transition: 0.3s ease;
 
-}
-.search label img:hover{
-  cursor: pointer;
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 .ico-menu-mobile {
   display: none;
@@ -233,11 +242,12 @@ nav .ico-nav .menu-btn i{
   }
 
 
+  @media (hover: hover) and (pointer: fine) {
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
     font-size: 1.2rem;
-  }
+  }}
   .search{
     display: block !important;
   }
@@ -615,12 +625,13 @@ nav .ico-nav .menu-btn i{
   color: #fff;
   text-decoration: none;
 }
-
-.btn--fill:hover,
+@media (hover: hover) and (pointer: fine) {
+.btn--fill,
 .btn--fill:active {
   background-color: #9c903f;
   text-decoration: underline;
   text-decoration: none;
+}
 }
 .hero-contact{
   display: flex;
@@ -691,7 +702,6 @@ nav .ico-nav .menu-btn i{
 }
 .browse-scrolling-wrapper .card{
   flex: 0 0 auto;
-  background: transparent;
   margin: 0 1em 1.5em;
   height: 25em;
   width:15em;
@@ -700,12 +710,10 @@ nav .ico-nav .menu-btn i{
   justify-content: center;
   color: black;
   text-decoration: none;
-
+  background-color: #D9D9D950;
   border-radius: 25px;
 }
-.browse-scrolling-wrapper .card:hover{
-  background-color: #D9D9D950;
-}
+
 .browse-scrolling-wrapper .card-view-all h6{
   text-align: center;
   font-size: 0.9rem;
@@ -719,10 +727,7 @@ nav .ico-nav .menu-btn i{
 .browse-scrolling-wrapper .card-view-all h6:hover{
   background-color: #bcbbbb90;
 }
-.browse-scrolling-wrapper .card-view-all{
-  cursor: pointer !important;
-}
-.browse-scrolling-wrapper .card-view-all:hover{
+.browse-scrolling-wrapper .card-view-all , .browse-scrolling-wrapper .card-view-all:hover{
   background-color: transparent;
 }
 .browse-scrolling-wrapper .card .mainimage img {
@@ -774,6 +779,20 @@ nav .ico-nav .menu-btn i{
 .new-arrval-scroll-btn button:hover{
   background-color: #bcbbbb90;
 }
+@media (hover: hover) and (pointer: fine) {
+  .browse-scrolling-wrapper .card-view-all{
+    background-color: transparent;
+  }
+  .browse-scrolling-wrapper .card{
+    background: transparent;
+  }
+  .browse-scrolling-wrapper .card:hover{
+    background-color: #D9D9D950;
+  }
+  .browse-scrolling-wrapper .card-view-all , .browse-scrolling-wrapper .card-view-all:hover{
+    background-color: transparent;
+  }
+  }
 
 @media (max-width: 800px){
   .new-arrval-scroll-btn button{
@@ -828,30 +847,41 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 border-radius: 25px;
+background-color: #2b2b2b30;
 }
-.category-card-element:hover{
-  background-color: #2b2b2b30;;
-}
+
 .category-card-element img {
   width: 100%;
   object-fit: fill; 
 }
 .category-card-element-title {
-display: none;
+display: block;
 font-size: 1.6rem;
 font-weight: 800;
 color: #ffffff;
 position:absolute;
 text-shadow: 1px 1px 2px #9c9c9a;
 }
-.category-card-element:hover > .category-card-element-title{
-  display: block;
-}
+
 .category-card-hpl{
   display: block;
   height: 100%;
   width: 100%;
   text-decoration: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .category-card-element{
+    background-color: transparent;
+  }
+.category-card-element:hover{
+  background-color: #2b2b2b30;
+}
+.category-card-element-title {
+  display: none;
+}
+.category-card-element:hover > .category-card-element-title{
+  display: block;
+}
 }
 @media (max-width: 1250px)
 {
