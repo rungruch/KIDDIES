@@ -710,7 +710,7 @@ nav .ico-nav .menu-btn i{
   justify-content: center;
   color: black;
   text-decoration: none;
-  background-color: #D9D9D950;
+  background-color: transparent;
   border-radius: 25px;
 }
 
