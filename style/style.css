@@ -167,6 +167,7 @@ nav .ico-nav .menu-btn i{
     border-radius: 5px;
     Transition: all 0.3s ease;
     outline: none;
+    min-width: 125px !important;
    }
    .menu-btn{
     margin-left: 3px;
@@ -221,9 +222,16 @@ nav .ico-nav .menu-btn i{
   #click:checked ~ .content-index{
     display: none;
   }
+  #click:checked ~ .content{
+    display: none;
+  }
+  #click:checked ~ .product-details{
+    display: none;
+  }
   #click:checked ~ footer{
     display: none;
   }
+
 
   nav ul li a.active,
   nav ul li a:hover{
